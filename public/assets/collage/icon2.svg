@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="46" viewBox="0 0 46 46">
+  <defs>
+    <clipPath id="clip-Audio-Proctoring">
+      <rect width="46" height="46"/>
+    </clipPath>
+  </defs>
+  <g id="Audio-Proctoring" clip-path="url(#clip-Audio-Proctoring)">
+    <g id="Audio-proctoring-2" data-name="Audio-proctoring" transform="translate(3 1.502)">
+      <path id="Path_9834" data-name="Path 9834" d="M19.714,19V34.713H14V19h5.714" transform="translate(3.428 7.284)" fill="#009de0"/>
+      <path id="Path_9835" data-name="Path 9835" d="M34.57,16A14.285,14.285,0,1,1,6,16H34.57" transform="translate(0 5.999)" fill="#009de0"/>
+      <path id="Path_9836" data-name="Path 9836" d="M18.571,2A8.571,8.571,0,0,0,10,10.571V22H27.142V10.571A8.571,8.571,0,0,0,18.571,2" transform="translate(1.714)" fill="#00ac41"/>
+      <path id="Path_9837" data-name="Path 9837" d="M27.142,16H10a8.571,8.571,0,1,0,17.142,0" transform="translate(1.714 5.999)" fill="#006a39"/>
+      <path id="Path_9838" data-name="Path 9838" d="M15.285,27H11v4.285h4.285V27m10,0H21v4.285h4.285V27" transform="translate(2.142 10.712)" fill="#009de0"/>
+      <path id="Path_9839" data-name="Path 9839" d="M19.714,27H14v4.285h5.714V27" transform="translate(3.428 10.712)" fill="#0061c5"/>
+    </g>
+  </g>
+</svg>
