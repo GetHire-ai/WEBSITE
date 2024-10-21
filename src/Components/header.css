@@ -1,8 +1,55 @@
 .sub-header { display: flex; z-index: 200;}
 
-.home-header { z-index: 200; border-radius: 0 0 30px 30px; background-color: #2B3140; position: fixed; top: 16px; left: 50%; transform: translateX(-50%);}
-.list-item a { position: relative; padding-bottom: 32px; transition: all 0.5s; color: #FFFFFF;}
+.home-header { z-index: 200; border-radius: 50px 50px 50px 50px; background-color: #ffffff; position: fixed; top: 20px; left: 50%; transform: translateX(-50%);}
+.list-item a { position: relative; padding-bottom: 32px; transition: all 0.5s; color: #070606;}
 .overlay { display: none; }
+
+.container-corporate {
+    background-image: url('../Assets/blue-white-gradient-abstract-background_53876-60240.avif');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-height: calc(100vh - 150px); 
+    padding: 20px; 
+  }
+
+  .text-center {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    width: 100%; 
+}
+
+.corporate-img {
+  background-image: url('../Assets/img-main-768x510.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  min-height: calc(70vh - 150px); 
+  margin-left: 10px; 
+  border-radius: 10px;
+  width: 80%; 
+}
+  /* .search-img {
+    background-image: url('../Assets/bg.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    min-height: calc(80vh - 180px); 
+    margin-left: 50px; 
+    border-radius: 10px;
+  } */
+  .corporate-video {
+    background-image: url('../Assets/66a8eabdab53e8fc57a9fed581166ef5.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    min-height: calc(80vh - 100px); 
+    margin-top: 30px;
+    padding: 20px; 
+    border-radius: 10px;
+  }
 
 @media(max-width: 768px) {
     .list-item a { position: relative; padding-bottom: 32px; transition: all 0.5s; color: #ffffff;}

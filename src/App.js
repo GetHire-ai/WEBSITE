@@ -21,6 +21,7 @@ import BlogPage from './Pages/BlogPage';
 import BlogDetails from './Pages/BlogDetails';
 import Corporate from './Pages/Corporate';
 import Collage from './Pages/Collage';
+import Pricing from './Pages/Pricing';
 
 
 function App() {
@@ -29,8 +30,8 @@ function App() {
      <Router>
    
    <Routes>
-    <Route path="/" element={<Coming/>}/>
-    <Route path="/home" element={<Home/>}/>
+    {/* <Route path="/" element={<Coming/>}/> */}
+    <Route path="/" element={<Home/>}/>
     <Route path="/mock-interview" element={<MockInterview/>}/>
     <Route path="/feature" element={<Feature/>}/>
     <Route path="/career" element={<Career/>}/>
@@ -41,6 +42,7 @@ function App() {
     <Route path="/howitwork" element={<HowWorks/>}/>
     <Route path="/workwithus" element={<WorkWithUs/>}/>
     <Route path="/blog" element={<BlogPage/>}/>
+    <Route path="/pricing" element={<Pricing/>}/>
     <Route path="/blog/blog-detail" element={<BlogDetails/>}/>
     {/* <Route path="/blog" element={<Blog/>}/> */}
     <Route path="/blog/:blogId" element={<BlogDetail/>}/>

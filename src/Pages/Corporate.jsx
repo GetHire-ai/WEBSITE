@@ -2,11 +2,37 @@ import React, { useState } from "react";
 import Navbar from "../Components/Navbar";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
+import { img1 } from "../Assets/1.webp";
+import "../Components/header.css";
+import CorporateNavbar from "./CorporateNavbar";
+import Pricing from './Pricing'
+import CorporateCrousel from "./CorporateCrousel";
+// import img2 from '../Assets/img-main-768x510.png'
+import img2 from '../Assets/Frame-1618872977.png'
+import img3 from '../Assets/colorborder-1.png'
+import img4 from '../Assets/icon1.png'
+import img5 from '../Assets/icon2.png'
+import img6 from '../Assets/icon3.png'
+import img7 from '../Assets/Frame-1618872965.png'
+
 
 function Corporate() {
-  // const [btn, setBtn] = useState("AI Finder");
 
   const [dropdown, setDropdown] = useState(false);
+  const [isHovered, setIsHovered] = useState(false); 
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const handleVideoClick = () => {
+    setIsClicked(!isClicked);
+  };
 
   const toggleDropdown = () => {
     setDropdown((prev) => !prev);
@@ -15,7 +41,7 @@ function Corporate() {
   return (
     <>
       <Navbar />
-      <div className="container">
+      <div className="container-corporate">
         <div className="pt-[196px]">
           <p className="text-[#297bca] mb-[16px] text-center font-[Poppins] font-[400] text-[14px] leading-[20px]">
             World’s #1st AI Recruiter
@@ -46,11 +72,18 @@ function Corporate() {
           </div>
         </div>
       </div>
-      <div className="py-[100px] px-[70px] relative justify-around flex-col items-center">
-        <div className="">
+
+      <div className=" bg-gradient-to-b from-white via-[#d7f8fd] to-[#ffffff] py-[100px] px-[70px] relative flex flex-col items-center ">
+        <div
+          onClick={handleVideoClick}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          className={`transition-transform duration-500 ease-in-out ${isHovered && !isClicked ? 'transform rotate-6 scale-60' : ''
+            }}`}
+        >
           <video
             controls
-            className="max-w-[70%] z-10 relative w-full m-auto rounded-[10px]"
+            className="max-w-[70%] z-10 relative w-full m-auto rounded-[10px] shadow-[0_-20px_70px_0_rgba(135,206,235,0.7)]"
           >
             <source
               src="https://gsblob.blob.core.windows.net/webpage-goodspace/GoodSpace%20Demo%20Video.mp4"
@@ -58,7 +91,8 @@ function Corporate() {
             />
           </video>
         </div>
-        <div className="h-[160px]"></div>
+      </div>
+      {/* <div className="h-[160px]"></div>
         <div
           style={{ boxShadow: "0 0 10px #0000001a" }}
           className="max-w-[90%] m-auto w-full h-[60%] p-[20px] rounded-[10px] bg-[#f1f4f7] absolute bottom-0 overflow-hidden"
@@ -66,74 +100,67 @@ function Corporate() {
           <div className={`line-loop-container !absolute`}>
             <div className="line-loop flex items-center gap-[14px]">
               <h6 className="font-[700] font-museo text-[36px] w-full leading-[44.64px] text-[#1C1C1C]">
-                Film Production House
+              HDFC bank
               </h6>
               <img alt="" src="assets/home/vector2.svg" />
               <h6 className="font-[700] font-museo text-[36px] w-full leading-[44.64px] text-[#1C1C1C]">
-                Digital media services
+              Times of india
               </h6>
               <img alt="" src="assets/home/vector2.svg" />
               <h6 className="font-[700] font-museo text-[36px] w-full leading-[44.64px] text-[#1C1C1C]">
-                Advertising Agency
+              Edelweiss
               </h6>
               <img alt="" src="assets/home/vector2.svg" />
               <h6 className="font-[700] font-museo text-[36px] w-full leading-[44.64px] text-[#1C1C1C]">
-                Creative Services
+              Infobeans
               </h6>
               <img alt="" src="assets/home/vector2.svg" />
               <h6 className="font-[700] font-museo text-[36px] w-full leading-[44.64px] text-[#1C1C1C]">
-                Film Production House
+              Theka coffee
               </h6>
               <img alt="" src="assets/home/vector2.svg" />
               <h6 className="font-[700] font-museo text-[36px] w-full leading-[44.64px] text-[#1C1C1C]">
-                Digital media services
+              retvens
               </h6>
               <img alt="" src="assets/home/vector2.svg" />
               <h6 className="font-[700] font-museo text-[36px] w-full leading-[44.64px] text-[#1C1C1C]">
-                Advertising Agency
+              aman travels
               </h6>
               <img alt="" src="assets/home/vector2.svg" />
               <h6 className="font-[700] font-museo text-[36px] w-full leading-[44.64px] text-[#1C1C1C]">
-                Creative Services
+              protons hub
               </h6>
               <img alt="" src="assets/home/vector2.svg" />
               <h6 className="font-[700] font-museo text-[36px] w-full leading-[44.64px] text-[#1C1C1C]">
-                Film Production House
+              protons hub
               </h6>
               <img alt="" src="assets/home/vector2.svg" />
               <h6 className="font-[700] font-museo text-[36px] w-full leading-[44.64px] text-[#1C1C1C]">
-                Digital media services
+              vishal builders
               </h6>
               <img alt="" src="assets/home/vector2.svg" />
               <h6 className="font-[700] font-museo text-[36px] w-full leading-[44.64px] text-[#1C1C1C]">
-                Advertising Agency
+              white elephant 
               </h6>
               <img alt="" src="assets/home/vector2.svg" />
               <h6 className="font-[700] font-museo text-[36px] w-full leading-[44.64px] text-[#1C1C1C]">
-                Creative Services
+              Nutrisure
               </h6>
               <img alt="" src="assets/home/vector2.svg" />
               <h6 className="font-[700] font-museo text-[36px] w-full leading-[44.64px] text-[#1C1C1C]">
-                Film Production House
+              Tuchware pvt ltd
               </h6>
               <img alt="" src="assets/home/vector2.svg" />
               <h6 className="font-[700] font-museo text-[36px] w-full leading-[44.64px] text-[#1C1C1C]">
-                Digital media services
-              </h6>
-              <img alt="" src="assets/home/vector2.svg" />
-              <h6 className="font-[700] font-museo text-[36px] w-full leading-[44.64px] text-[#1C1C1C]">
-                Advertising Agency
-              </h6>
-              <img alt="" src="assets/home/vector2.svg" />
-              <h6 className="font-[700] font-museo text-[36px] w-full leading-[44.64px] text-[#1C1C1C]">
-                Creative Services
+              Ashutosh financial serviceypvt ltd
               </h6>
               <img alt="" src="assets/home/vector2.svg" />
             </div>
           </div>
-        </div>
-      </div>
-      <div className="pt-[124px] sm:px-[100px] px-[20px]">
+        </div> */}
+
+      <CorporateCrousel />
+      <div className="pt-[0px] sm:px-[100px] px-[20px]">
         <h6 className="mb-[48px] font-[Poppins] text-[32px] font-[600] leading-[48px] text-center">
           Why Businesses Across India Trust <br />
           <span className="text-[#297bca] font-[700]">Gethire.ai</span>
@@ -284,7 +311,7 @@ function Corporate() {
         </div> */}
       </div>
 
-      <div className="flex flex-col">
+      {/* <div className="flex flex-col">
         <div className="sticky-section bg-[#FFFFFF] flex flex-row justify-between px-[90px] h-[66vh]">
           <div className="max-w-[55%] w-full px-[3%] mb-[10px] flex flex-col justify-center">
             <h3 className="text-[42px] leading-[50px] font-[600] py-[16px] mb-[16px] border-b border-[#d1d4d7] text-[#297bca] font-museo">
@@ -405,76 +432,63 @@ function Corporate() {
             />
           </div>
         </div>
+      </div> */}
+<div className="bg-gradient-to-r from-[#baf0f2] via-[#e8d5f8] to-[#d0f4e9] rounded-[10px] pt-[100px] px-[80px] relative z-10 ml-20 mr-20 mb-20">
+  <div className="grid sm:grid-cols-5 grid-cols-1 items-start relative z-10">
+    {/* Left Side Content */}
+    <div className="sm:col-span-3 col-span-1 flex flex-col items-start pb-20">
+      <img src={img7} className="w-14 h-14" alt="Icon" />
+      <h2 className="font-[Poppins] font-[500] text-[40px] leading-[50px] mt-2">
+        Experience Lightning-Fast Hiring with Gethire.ai
+      </h2>
+      <div className="flex mt-2 items-center gap-4">
+  <div className="flex max-w-[330px] w-full items-center py-[10px] px-[14px] rounded-[6px] transition-colors duration-300 shadow-md hover:shadow-lg gap-[10px] border border-transparent hover:border-sky-500">
+    <p className="w-[30%]">IN&nbsp; +91</p>
+    <input
+      type="text"
+      className="w-full font-[Poppins] outline-none bg-transparent text-[16px] font-[400] leading-[16px] focus:border-transparent focus:ring-0 hover:border-sky-500 transition-colors duration-300"
+      placeholder="Enter your contact number"
+    />
+  </div>
+
+
+
+        <button className="bg-[#008fbf] text-[#FFFFFF] py-[12px] px-[24px] rounded-[10px] font-museo font-[700] transition-all duration-300 hover:bg-[#28607E] whitespace-nowrap">
+  Start Hiring
+</button>
       </div>
-      <div className="bg-[#FFFFFF] sm:mx-[60px] mx-[14px] sm:mt-[80px] mt-[30px]">
-        <div className="bg-[#f1f4f7] rounded-[10px] py-[40px] px-[70px]">
-          <div className="grid sm:grid-cols-5 grid-cols-1 items-center row-gap-[60px]">
-            <div className="sm:col-span-3 col-span-1">
-              <h2 className="py-[32px] font-[Poppins] font-[900] text-[64px] leading-[76px]">
-                Experience Lightning-Fast Hiring with Gethire.ai
-              </h2>
-              <div className="flex mt-[32px] items-center gap-[16px]">
-                <div className="flex max-w-[330px] w-full items-center border py-[10px] px-[14px] rounded-[6px] border-[#d1d4d7] gap-[10px]">
-                  <p className="w-[30%]">IN&nbsp; +91</p>
-                  <input
-                    type="text"
-                    className="w-full font-[Poppins] outline-none bg-transparent text-[16px] font-[400] leading-[16px]"
-                    placeholder="Enter your contact number"
-                  />
-                </div>
-                <button className="bg-[#008fbf] text-[#FFFFFF]  py-[12px] px-[36px] rounded-[10px] font-museo font-[700] transition-all duration-300 hover:bg-[#28607E]">
-                  Start Hiring
-                </button>
-              </div>
-            </div>
-            <div className="sm:col-span-2 col-span-1">
-              <div className="grid grid-cols-2 gap-[24px]">
-                <div className="flex flex-col items-center">
-                  <h6 className="font-[Poppins] font-[700] text-[48px] leading-[48px] text-center mb-[10px] text-[#297bca]">
-                    30%
-                  </h6>
-                  <p className="text-[14px] font-[400] leading-[24px] text-[#626a72] text-center">
-                    Increase in candidate <br /> applications per job
-                  </p>
-                </div>
-                <div className="flex flex-col items-center">
-                  <h6 className="font-[Poppins] font-[700] text-[48px] leading-[48px] text-center mb-[10px] text-[#297bca]">
-                    5 hrs+
-                  </h6>
-                  <p className="text-[14px] font-[400] leading-[24px] text-[#626a72] text-center">
-                    time saved per day <br /> per recruiter
-                  </p>
-                </div>
-                <div className="flex flex-col items-center">
-                  <h6 className="font-[Poppins] font-[700] text-[48px] leading-[48px] text-center mb-[10px] text-[#297bca]">
-                    10X
-                  </h6>
-                  <p className="text-[14px] font-[400] leading-[24px] text-[#626a72] text-center">
-                    Improved candidate <br /> quality per job
-                  </p>
-                </div>
-                <div className="flex flex-col items-center">
-                  <h6 className="font-[Poppins] font-[700] text-[48px] leading-[48px] text-center mb-[10px] text-[#297bca]">
-                    1/10th
-                  </h6>
-                  <p className="text-[14px] font-[400] leading-[24px] text-[#626a72] text-center">
-                    the cost per job <br /> per recruiter
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div></div>
-          </div>
-        </div>
+     
+    </div>
+
+    {/* Right Side Background Images */}
+    <div className="corporate-img sm:col-span-2 col-span-1 flex justify-end items-start relative mt-[-20px]">
+    <img src={img5} className="w-10 h-10 " style={{ marginTop: '-55px', marginRight:'100px' }}/>
+      <div className="relative">
+        
+        <img src={img3} className="w-60 h-50" style={{ marginTop: '-70px' }} alt="Background 1" />
+        <img src={img2} className="w-70 h-60 absolute top-0 right-7 mt-[50px]" alt="Background 2" />
       </div>
-      <div className="w-full pt-[100px]">
+    </div>
+  </div>
+</div>
+
+
+<div>
+  <CorporateNavbar />
+</div>
+
+
+
+      {/* <div className="w-full pt-[100px]">
         <img
           alt=""
-          src="assets/home/photo5.png"
+          src="assets/home/photo5.png" 
           className="w-full object-cover"
         />
-      </div>
-      <div className="bg-[#122239]">
+
+      </div> */}
+
+      <div className="bg-gradient-to-r from-blue-300 to-gray-300 rounded-[100px] pt-[100px]">
         <div className="max-w-[1370px] flex flex-col items-center m-auto w-full">
           <div className="max-w-[760px] w-full m-auto">
             <h2 className="text-[46px] mb-[24px] font-[700] font-museo leading-[55.2px] text-[#FFFFFF] text-center">
@@ -592,6 +606,9 @@ function Corporate() {
           </div>
         </div>
       </div>
+      {/* <div>
+        <Pricing/>
+      </div> */}
       <div className="max-w-[75%] w-full mx-auto mt-[60px]">
         <h6 className="font-[Poppins] text-center font-[700] text-[44px] leading-normal mb-[20px] text-[#3e3e3e]">
           FAQ
@@ -612,15 +629,13 @@ function Corporate() {
                 </h6>
               </div>
               <i
-                className={`fa-solid fa-angle-down text-[#172b4d] transition-all duration-300 ${
-                  dropdown ? "rotate-[-180deg]" : "rotate-[0deg]"
-                }`}
+                className={`fa-solid fa-angle-down text-[#172b4d] transition-all duration-300 ${dropdown ? "rotate-[-180deg]" : "rotate-[0deg]"
+                  }`}
               ></i>
             </div>
             <div
-              className={`duration-300 transition-all ${
-                dropdown ? "h-[58px] pb-[16px]" : "h-[0px] pb-[0px]"
-              } overflow-hidden`}
+              className={`duration-300 transition-all ${dropdown ? "h-[58px] pb-[16px]" : "h-[0px] pb-[0px]"
+                } overflow-hidden`}
             >
               <p className="font-[Poppins] text-[#363f4a] font-[400] text-[16px] leading-normal">
                 While Career Counsellor offers valuable AI-powered guidance and
