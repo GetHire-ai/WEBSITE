@@ -40,20 +40,20 @@ function CorporateCrousel() {
     }));
   };
 
-  const imageCaptions = [
-    // "Tuchware pvt ltd",
-    // "Times of india",
-    // "HDFC bank",
-    // "Edelweiss",
-    // "Infobeans",
-    // "Theka coffee",
-    // "Retvens",
-    // "Aman travels",
-    // "Protons hub",
-    // "Vishal builders",
-    // "White elephant",
-    // "Nutrisure",
-  ];
+  // const imageCaptions = [
+  //   "Tuchware pvt ltd",
+  //   "Times of india",
+  //   "HDFC bank",
+  //   "Edelweiss",
+  //   "Infobeans",
+  //   "Theka coffee",
+  //   "Retvens",
+  //   "Aman travels",
+  //   "Protons hub",
+  //   "Vishal builders",
+  //   "White elephant",
+  //   "Nutrisure",
+  // ];
 
   const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img11, img12, img13];
 
