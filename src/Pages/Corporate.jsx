@@ -433,14 +433,37 @@ function Corporate() {
           </div>
         </div>
       </div> */}
-<div className="bg-gradient-to-r from-[#baf0f2] via-[#e8d5f8] to-[#d0f4e9] rounded-[10px] pt-[100px] px-[80px] relative z-10 ml-20 mr-20 mb-20">
+<div className="bg-gradient-to-r from-[#e1f7f7] via-[#f0e9f7] to-[#f0fdf9] rounded-[10px] pt-[100px] px-[80px] relative z-10 ml-20 mr-20 mb-20">
   <div className="grid sm:grid-cols-5 grid-cols-1 items-start relative z-10">
     {/* Left Side Content */}
     <div className="sm:col-span-3 col-span-1 flex flex-col items-start pb-20">
       <img src={img7} className="w-14 h-14" alt="Icon" />
-      <h2 className="font-[Poppins] font-[500] text-[40px] leading-[50px] mt-2">
+      <div style={{ textAlign: 'left',  }}>
+      <h1 style={{
+        fontFamily: 'Poppins, sans-serif',
+        fontWeight: 'bold',
+        fontSize: '2.5rem',
+        width: '600px',
+        color: '#2c3e50'
+      }}>
+        Use  <span style={{
+          background: 'linear-gradient(90deg, #ff7e5f, #feb47b, #86a8e7)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent'
+        }}>
+          Advanced AI
+        </span> To Make Hiring Smoother & Faster
+      </h1>
+      <p style={{
+        fontFamily: 'Roboto, sans-serif',
+        fontWeight: 'normal',
+        fontSize: '1.5rem',
+        color: '#696969',
+        marginTop: '10px'
+      }}>
         Experience Lightning-Fast Hiring with Gethire.ai
-      </h2>
+      </p>
+    </div>
       <div className="flex mt-2 items-center gap-4">
   <div className="flex max-w-[330px] w-full items-center py-[10px] px-[14px] rounded-[6px] transition-colors duration-300 shadow-md hover:shadow-lg gap-[10px] border border-transparent hover:border-sky-500">
     <p className="w-[30%]">IN&nbsp; +91</p>
