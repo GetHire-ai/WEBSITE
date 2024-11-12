@@ -17,7 +17,7 @@ function Navbar() {
 
           <div className="py-4 flex justify-between items-center">
             {/* Logo at the start */}
-            <Link to="/" className="flex-none m-0">
+            <Link to="#hero" className="flex-none m-0">
               <img src="/gethireai_logo.png" className="h-10 object-cover" alt="GetHireAI Logo" />
             </Link>
 
@@ -30,9 +30,10 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="list-item">
-                  <Link to="/feature" onClick={() => setSidebarToggle(false)} className="no-underline text-lg text-gray-800 font-semibold py-2 sm:py-0">
+                  <a href="#features" onClick={() => setSidebarToggle(false)}
+                     className="no-underline text-lg text-gray-800 font-semibold py-2 sm:py-0">
                     Features
-                  </Link>
+                  </a>
                 </li>
                 <li className="list-item">
                   <Link to="/pricing" onClick={() => setSidebarToggle(false)} className="no-underline text-lg text-gray-800 font-semibold py-2 sm:py-0">

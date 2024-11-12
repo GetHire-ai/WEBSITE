@@ -9,6 +9,7 @@ import FAQs from "../Components/FAQs";
 import CorporateHeroSection from "../Components/CorporateHeroSection";
 import CorporateAISection from "../Components/CorporateAISection";
 import CorporateTrustSection from "../Components/CorporateTrustSection";
+import CorporatePricing from "../Components/CorporatePricing";
 
 const Corporate = () => {
 
@@ -22,7 +23,7 @@ const Corporate = () => {
           <CorporateTrustSection/>
           <CorporateFeatures/>
           <CorporateAISection/>
-
+          <CorporatePricing/>
 
         {/* FAQ Section */}
         <FAQs/>

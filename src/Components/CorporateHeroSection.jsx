@@ -33,7 +33,7 @@ function CorporateHeroSection() {
     };
 
     return (
-        <section className="container mx-auto px-4 pt-56 pb-24">
+        <section id="hero" className="container mx-auto px-4 pt-56 pb-24">
             <div className="text-center">
                   <span className="text-[#295EC9] text-md font-normal mb-4 block">
                     #1 AI-Powered Recruitment in India

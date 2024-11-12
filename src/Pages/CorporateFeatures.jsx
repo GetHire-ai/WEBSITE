@@ -178,13 +178,14 @@ function CorporateFeatures() {
 
     console.log(activeTab)
     return (
-        <div className="text-black border rounded p-4 m-48">
-            <div className="text-center my-4 mt-5" style={{ height: 'auto', width: '80%', margin: '0 auto' }}>
+        <div id="features" className="text-black border rounded p-4 m-48">
+            <div className="text-center my-4 mt-5" style={{height: 'auto', width: '80%', margin: '0 auto'}}>
                 <h2 className="py-[32px] font-[Poppins] font-[900] text-[60px] leading-[76px]">
                     Everything You Need To Make Hiring Effortless
                 </h2>
                 <p className="font-weight-bold lead">
-                    <b>Attract top talent, manage applicants with advanced tools and onboard seamlessly with our all-in-one recruitment SaaS platform</b>
+                    <b>Attract top talent, manage applicants with advanced tools and onboard seamlessly with our
+                        all-in-one recruitment SaaS platform</b>
                 </p>
             </div>
             <div className="mx-auto max-w-7xl">
