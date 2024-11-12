@@ -22,6 +22,7 @@ import BlogDetails from './Pages/BlogDetails';
 import Corporate from './Pages/Corporate';
 import Collage from './Pages/Collage';
 import Pricing from './Pages/Pricing';
+import './App.css'
 
 
 function App() {
@@ -31,7 +32,10 @@ function App() {
    
    <Routes>
     {/* <Route path="/" element={<Coming/>}/> */}
-    <Route path="/" element={<Home/>}/>
+
+    <Route path="/" element={<Corporate/>}/>
+
+    <Route path="/_home" element={<Home/>}/>
     <Route path="/mock-interview" element={<MockInterview/>}/>
     <Route path="/feature" element={<Feature/>}/>
     <Route path="/career" element={<Career/>}/>
