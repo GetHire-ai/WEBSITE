@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-// import burger from "../Assets/Hamburger_icon.svg.png";
 import { Modal, ModalBody, ModalHeader } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
-import img from '../Assets/Homepage-carousels.jpg';
-import "./header.css";
+// import "./header.css";
 
 function Navbar() {
   const [modal, setModal] = useState(false);

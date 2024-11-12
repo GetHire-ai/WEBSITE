@@ -24,7 +24,7 @@ import team3 from '../Assets/image83-1-768x533.png'
 import team4 from '../Assets/image84-1-768x914.png'
 
 
-function CorporateNavbar() {
+function CorporateFeatures() {
     const [activeTab, setActiveTab] = useState("Employer Brand");
     const tabs = [
         "Employer Brand",
@@ -340,7 +340,7 @@ function CorporateNavbar() {
                 <div className="text-center my-4 mt-5">
                     <ul className="nav justify-content-center bg-blue p-3 rounded shadow">
                         {tabs.map((tab) => (
-                            <li className="nav-item" key={tab}>
+                            <li className="nav-item cursor-pointer" key={tab}>
                                 <p
                                     onClick={() => setActiveTab(tab)}
                                     className={`nav-link text-black transition-all duration-300 
@@ -361,4 +361,4 @@ function CorporateNavbar() {
     );
 }
 
-export default CorporateNavbar;
+export default CorporateFeatures;

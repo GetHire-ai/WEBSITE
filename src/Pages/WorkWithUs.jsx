@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Navbar from '../Components/Navbar'
 
 function WorkWithUs() {
@@ -20,35 +20,18 @@ function WorkWithUs() {
   };
 
   const handleSubmit = () => {
-    fetch('https://kstraining-server.vercel.app/api/trainer/create', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log('Success:', data);
-        // Handle success, e.g., show a success message to the user
-        alert('Form submitted successfully!');
-        // Reset the form
-        document.getElementById('myForm').reset();
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-        // Handle error, e.g., show an error message to the user
-      });
+    // Save to Excel
+
   };
   return (
   <>
   <Navbar/>
-    <div className='workwithus'>
+    <div>
     <h1>Work With Us</h1>
 
 
     </div>
-    <div className='berainer'>
+    <div>
         <h2>Become a Trainer</h2>
         <br/>
         <p>If you have expertise in any technology, looking for a platform on which to share your knowledge and have the passion to work with us, then SS JOB SUPPORT is the right place for you. We are associated with more than 100+ trainers and they are supporting our students on a regular basis.</p>
@@ -56,7 +39,7 @@ function WorkWithUs() {
     <br/>
     <br/>
     <br/>
-    <div className='inpt-section'>
+    <div>
       <div className='inpt'>
         <label>Your Name</label>
         <input name='name' placeholder='Your Name' onChange={handleChange} />
