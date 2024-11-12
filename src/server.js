@@ -8,7 +8,21 @@ const PORT = 5000;
 
 // Middleware
 app.use(bodyParser.json());
-app.use(cors());
+// Correct and robust CORS setup
+app.use(cors({
+    origin: 'http://localhost:3000', // Allow only your React app
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+}));
+
+// Handle preflight requests globally
+app.options('*', (req, res) => {
+    res.set('Access-Control-Allow-Origin', 'http://localhost:3000');
+    res.set('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    res.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    res.status(200).end();
+});
+
 
 // MongoDB connection
 const MONGO_URI = 'mongodb+srv://gethiretech:gethiretech@atlascluster.womcxrm.mongodb.net/gethire';

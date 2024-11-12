@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Components/header.css";
 
@@ -160,14 +160,13 @@ const CONTENT = {
 // Generic function to render content based on the active tab
 const renderTabContent = (tabContent) => (
     <div className="container mx-auto p-6">
-        <div className="flex flex-wrap space-x-6">
+        <div className="flex flex-row space-x-6">
             {tabContent.map((block, index) => (
-                <div key={index} className="w-full md:w-1/2 lg:w-1/3 mb-6">
-                    <div className="bg-gradient-to-r from-green-100 to-blue-200 border border-sky-200 p-6 rounded-lg shadow-lg shadow-green-500 text-left">
+                <div key={index}
+                     className="w-full md:w-1/2 lg:w-1/3 mb-6 border border-sky-200 p-6 rounded-lg shadow-lg shadow-green-500 text-left">
                         <h2 className="font-bold text-2xl mb-4">{block.title}</h2>
                         <p className="text-lg leading-relaxed">{block.description}</p>
                         <img src={block.imageSource} className="w-full rounded-lg mt-4" alt={block.title} />
-                    </div>
                 </div>
             ))}
         </div>
@@ -177,8 +176,9 @@ const renderTabContent = (tabContent) => (
 function CorporateFeatures() {
     const[activeTab, setActiveTab] = useState(TABS[0]);
 
+    console.log(activeTab)
     return (
-        <div className="text-black rounded p-4">
+        <div className="text-black border rounded p-4 m-48">
             <div className="text-center my-4 mt-5" style={{ height: 'auto', width: '80%', margin: '0 auto' }}>
                 <h2 className="py-[32px] font-[Poppins] font-[900] text-[60px] leading-[76px]">
                     Everything You Need To Make Hiring Effortless
@@ -187,16 +187,15 @@ function CorporateFeatures() {
                     <b>Attract top talent, manage applicants with advanced tools and onboard seamlessly with our all-in-one recruitment SaaS platform</b>
                 </p>
             </div>
-            <div className="text-center my-4 mt-5">
-                <ul className="nav justify-content-center bg-blue p-3 rounded shadow">
+            <div className="mx-auto max-w-7xl">
+                <ul className="pt-3 flex flex-row w-fit gap-8 justify-content-center">
                     {TABS.map((tab) => (
-                        <li className="nav-item cursor-pointer" key={tab}>
+                        <li className="cursor-pointer" key={tab}>
                             <p
                                 onClick={() => setActiveTab(tab)}
-                                className={`nav-link text-black transition-all duration-300 
-                                    border-b-2 ${activeTab === tab ? "border-red-500 bg-light-pink-100" : "border-transparent"}
-                                    hover:border-pink-500 hover:bg-light-green-00 hover:shadow-md hover:shadow-pink-300`}
-                            >
+                                className={`px-4 py-2 transition-all duration-300 
+                                    ${activeTab === tab ? "bg-gradient-to-r from-green-100 to-blue-200" : "border-transparent"}
+                                    hover:bg-blue-100 rounded-xl`}>
                                 {tab}
                             </p>
                         </li>

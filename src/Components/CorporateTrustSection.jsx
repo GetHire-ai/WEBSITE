@@ -2,9 +2,9 @@ import React from "react";
 
 function CorporateTrustSection() {
     return (
-        <section className="max-w-5xl mx-auto my-16">
+        <section className="max-w-6xl mx-auto">
 
-            <div className="flex flex-col ">
+            <div className="flex flex-col py-12">
                 <h2 className="text-5xl text-center">
                     Built for recruiters, by recruiters
                 </h2>
