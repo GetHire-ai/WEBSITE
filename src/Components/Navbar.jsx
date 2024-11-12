@@ -84,7 +84,7 @@ function Navbar() {
         <div className="flex justify-between items-center xl:gap-[50px] lg:gap-[14px] py-[14px] max-w-[90%] m-auto mt-[30px] w-full home-header xl:px-[80px] lg:px-[20px] px-[20px]">
           {/* Logo at the start */}
           <Link to="/" className="flex-none m-0">
-            <img src="/assets/home/logo.svg" className="h-[40px] object-cover" alt="GetHire Logo" />
+            <img src="/gethireai_logo.png" className="h-[40px] object-cover" alt="GetHire Logo" />
           </Link>
 
           {/* Centered Navbar Items */}

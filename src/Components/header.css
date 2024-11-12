@@ -68,7 +68,7 @@
     }
 
 
-footer { background: linear-gradient(106.63deg,#123d67 0%,#1d5a93 33.33%,#297bca 66.67%,#297bca 100%); padding: 100px;}
+footer { background: linear-gradient(106.63deg,#123d67 0%,#1d5a93 33.33%,#295EC9 66.67%,#295EC9 100%); padding: 100px;}
 
 @media(max-width: 768px) {
     footer { padding: 80px 20px;}

@@ -32,10 +32,10 @@ function Career() {
               Uncover a career path that perfectly aligns with your skills and aspirations. Receive personalized guidance, detailed visual career analyses, and a strategic roadmap to help you achieve your goals. Enjoy enhanced job matching and actionable insights designed to help you reach your full potential.
               </p>
               <div className="flex gap-[10px] mt-[48px]">
-                <button className="bg-[#008fbf] text-[#FFFFFF] py-[15px] px-[36px] rounded-[10px] font-museo font-[700] transition-all duration-300 hover:bg-[#28607E]">
+                <button className="bg-[#008fbf] text-[#FFFFFF] py-[15px] px-[36px] rounded-[10px] font-museo font-[700] transition-all duration-300 hover:bg-[#316EDC]">
                   Get Career Counsellor
                 </button>
-                <button className="bg-[#008fbf] text-[#FFFFFF] py-[15px] px-[36px] rounded-[10px] font-museo font-[700] transition-all duration-300 hover:bg-[#28607E]">
+                <button className="bg-[#008fbf] text-[#FFFFFF] py-[15px] px-[36px] rounded-[10px] font-museo font-[700] transition-all duration-300 hover:bg-[#316EDC]">
                 Explore Our Services
                 </button>
               </div>
@@ -119,7 +119,7 @@ function Career() {
               Make informed career decisions with confidence and a clear vision for your future. Our service crafts a personalized career strategy tailored to your goals, including interview preparation and effective networking tips.
               </p>
               <div className="flex justify-end w-full">
-                <button className="bg-[#008fbf] text-[#FFFFFF] py-[15px] px-[36px] rounded-[10px] font-museo font-[700] transition-all duration-300 hover:bg-[#28607E]">
+                <button className="bg-[#008fbf] text-[#FFFFFF] py-[15px] px-[36px] rounded-[10px] font-museo font-[700] transition-all duration-300 hover:bg-[#316EDC]">
                   Get Career Counsellor
                 </button>
               </div>
@@ -203,7 +203,7 @@ function Career() {
               <p className="border-t-[0.5px] border-b-[0.5px] border-[#ACACAC] text-[#2d2d2d] py-[20px] w-full text-center font-[Poppins] text-[16px] font-[400] leading-normal">
                 <strong>2</strong> session
               </p>
-              <button className="bg-[#008fbf] text-[#FFFFFF] py-[11px] px-[30px] rounded-[14px] font-[Poppins] text-[18px] font-[500] w-full my-[22px] transition-all duration-300 hover:bg-[#28607E]">
+              <button className="bg-[#008fbf] text-[#FFFFFF] py-[11px] px-[30px] rounded-[14px] font-[Poppins] text-[18px] font-[500] w-full my-[22px] transition-all duration-300 hover:bg-[#316EDC]">
                 Buy Plan
               </button>
               <div className="w-full">
@@ -256,7 +256,7 @@ function Career() {
               <p className="border-t-[0.5px] border-b-[0.5px] border-[#ACACAC] text-[#2d2d2d] py-[20px] w-full text-center font-[Poppins] text-[16px] font-[400] leading-normal">
                 <strong>4</strong> session
               </p>
-              <button className="bg-[#008fbf] text-[#FFFFFF] py-[11px] px-[30px] rounded-[14px] font-[Poppins] text-[18px] font-[500] w-full my-[22px] transition-all duration-300 hover:bg-[#28607E]">
+              <button className="bg-[#008fbf] text-[#FFFFFF] py-[11px] px-[30px] rounded-[14px] font-[Poppins] text-[18px] font-[500] w-full my-[22px] transition-all duration-300 hover:bg-[#316EDC]">
                 Buy Plan
               </button>
               <div className="w-full">

@@ -122,7 +122,7 @@ function Home() {
               </p>
               <button
                 onClick={handleOpenModal}
-                className="bg-[#008fbf] text-[#FFFFFF] py-[15px] px-[36px] rounded-[30px] font-museo font-[700] transition-all duration-300 hover:bg-[#28607E]"
+                className="bg-[#008fbf] text-[#FFFFFF] py-[15px] px-[36px] rounded-[30px] font-museo font-[700] transition-all duration-300 hover:bg-[#316EDC]"
               >
                 Ready for Greatness?
               </button>
@@ -263,7 +263,7 @@ function Home() {
       <div className="flex flex-col">
         <div className="sticky-section bg-[#FFFFFF] flex flex-row justify-between px-[90px] h-[66vh]">
           <div className="max-w-[55%] w-full px-[3%] mb-[10px] flex flex-col justify-center">
-            <h3 className="text-[42px] leading-[50px] font-[600] py-[16px] mb-[16px] border-b border-[#d1d4d7] text-[#297bca] font-museo">
+            <h3 className="text-[42px] leading-[50px] font-[600] py-[16px] mb-[16px] border-b border-[#d1d4d7] text-[#295EC9] font-museo">
               Post your job on Gethire.ai <br /> in seconds
             </h3>
             <p className="text-[20px] font-[400] leading-[30px] text-[#6c757d] mb-[10px]">
@@ -300,7 +300,7 @@ function Home() {
         </div>
         <div className="sticky-section bg-[#FFFFFF] flex flex-row justify-between px-[90px] h-[66vh]">
           <div className="max-w-[55%] w-full px-[3%] mb-[10px] flex flex-col justify-center">
-            <h3 className="text-[42px] leading-[50px] font-[600] py-[16px] mb-[16px] border-b border-[#d1d4d7] text-[#297bca] font-museo">
+            <h3 className="text-[42px] leading-[50px] font-[600] py-[16px] mb-[16px] border-b border-[#d1d4d7] text-[#295EC9] font-museo">
               Make great hiring <br />a team effort
             </h3>
             <p className="text-[20px] font-[400] leading-[30px] text-[#6c757d] mb-[10px]">

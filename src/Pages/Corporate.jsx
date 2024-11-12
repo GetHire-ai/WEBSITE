@@ -20,13 +20,13 @@ const Corporate = () => {
         {/* Hero Section */}
         <section className="container mx-auto px-4 pt-48">
           <div className="text-center">
-          <span className="text-[#297bca] text-sm font-normal mb-4 block">
-            World's #1st AI Recruiter
+          <span className="text-[#295EC9] text-sm font-normal mb-4 block">
+            AI-Powered Recruitment
           </span>
             <h1 className="text-[#2d3135] text-4xl md:text-5xl font-black mb-12 max-w-4xl mx-auto">
               Revolutionizing Recruitment with AI<br />
               Hire Top Talent in Under
-              <span className="text-[#297bca]"> 24 Hours</span>
+              <span className="text-[#295EC9]"> 24 Hours</span>
             </h1>
             <p className="text-[#2d3135] text-sm font-light max-w-2xl mx-auto mb-12">
               Experience the future of hiring with our AI-driven platform that
@@ -45,7 +45,7 @@ const Corporate = () => {
                     placeholder="Enter your contact number"
                 />
               </div>
-              <button className="bg-[#008fbf] text-white py-3 px-9 rounded-lg font-bold hover:bg-[#28607E] transition-colors">
+              <button className="bg-[#295EC9] text-white py-3 px-9 rounded-lg font-bold hover:bg-[#316EDC] transition-colors">
                 Start Hiring
               </button>
             </div>
@@ -58,7 +58,7 @@ const Corporate = () => {
         <section className="py-16 px-5 sm:px-24">
           <h2 className="text-3xl font-semibold text-center mb-12">
             Why Businesses Across India Trust
-            <span className="text-[#297bca] font-bold"> Gethire.ai</span>
+            <span className="text-[#295EC9] font-bold">gethire.ai</span>
           </h2>
         </section>
 
@@ -90,7 +90,7 @@ const Corporate = () => {
                         placeholder="Enter your contact number"
                     />
                   </div>
-                  <button className="bg-[#008fbf] text-white py-3 px-6 rounded-lg font-bold hover:bg-[#28607E] transition-colors whitespace-nowrap">
+                  <button className="bg-[#008fbf] text-white py-3 px-6 rounded-lg font-bold hover:bg-[#316EDC] transition-colors whitespace-nowrap">
                     Start Hiring
                   </button>
                 </div>
@@ -178,7 +178,7 @@ const Corporate = () => {
                       className="col-span-2 p-4 border rounded"
                   />
                 </div>
-                <button className="w-full mt-4 bg-[#008fbf] text-white py-3 px-9 rounded font-bold hover:bg-[#28607E] transition-colors">
+                <button className="w-full mt-4 bg-[#008fbf] text-white py-3 px-9 rounded font-bold hover:bg-[#316EDC] transition-colors">
                   Book Demo
                 </button>
               </form>

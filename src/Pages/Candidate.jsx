@@ -90,7 +90,7 @@ function Candidate() {
         <div className="container">
           <div className="flex items-center justify-between mx-24">
             <div className="w-1/2">
-              <h6 className="font-[700] pb-[20px] font-[Inter] text-[20px] leading-[22px] text-[#297bca] ">
+              <h6 className="font-[700] pb-[20px] font-[Inter] text-[20px] leading-[22px] text-[#295EC9] ">
                 INDIA’S #1 JOB PLATFORM
               </h6>
               <h6 className="font-[700] font-[Inter] text-[56px] leading-[67px] text-[#000000]">
@@ -116,7 +116,7 @@ function Candidate() {
                     placeholder="Search jobs by 'area'"
                   />
                 </div>
-                <button className="bg-[#008fbf] text-[#FFFFFF] px-[36px] p-2 rounded-[10px] font-museo font-[700] transition-all duration-300 hover:bg-[#28607E]">
+                <button className="bg-[#008fbf] text-[#FFFFFF] px-[36px] p-2 rounded-[10px] font-museo font-[700] transition-all duration-300 hover:bg-[#316EDC]">
                   Search jobs
                 </button>
               </div>
@@ -535,7 +535,7 @@ function Candidate() {
               <option value="DE">Germany</option>
             </select>
           </form>
-          <button className="bg-[#008fbf] text-[#FFFFFF] py-[12px] px-[36px] rounded-[10px] font-museo font-[700] transition-all duration-300 hover:bg-[#28607E]">
+          <button className="bg-[#008fbf] text-[#FFFFFF] py-[12px] px-[36px] rounded-[10px] font-museo font-[700] transition-all duration-300 hover:bg-[#316EDC]">
             Search Now
           </button>
         </div>
@@ -582,7 +582,7 @@ function Candidate() {
                   placeholder="Enter your contact number"
                 />
               </div>
-              <button className="bg-[#008fbf] text-[#FFFFFF] py-[12px] px-[36px] rounded-[10px] font-museo font-[700] transition-all duration-300 hover:bg-[#28607E]">
+              <button className="bg-[#008fbf] text-[#FFFFFF] py-[12px] px-[36px] rounded-[10px] font-museo font-[700] transition-all duration-300 hover:bg-[#316EDC]">
                 Find Jobs
               </button>
             </div>
@@ -628,7 +628,7 @@ function Candidate() {
                   placeholder="Enter mobile number..."
                   className="outline-none text-[#121224] font-[Poppins] font-[500] text-[14px] leading-[18px]"
                 />
-                <button className="bg-[#008fbf] text-[#FFFFFF] py-[6px] px-[12px] rounded-[40px] font-museo font-[700] transition-all duration-300 hover:bg-[#28607E]">
+                <button className="bg-[#008fbf] text-[#FFFFFF] py-[6px] px-[12px] rounded-[40px] font-museo font-[700] transition-all duration-300 hover:bg-[#316EDC]">
                   Find Jobs
                 </button>
               </div>
