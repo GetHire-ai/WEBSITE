@@ -33,22 +33,19 @@ function CorporateHeroSection() {
     };
 
     return (
-        <section className="container mx-auto px-4 pt-48">
+        <section className="container mx-auto px-4 pt-56 pb-24">
             <div className="text-center">
-                  <span className="text-[#295EC9] text-sm font-normal mb-4 block">
+                  <span className="text-[#295EC9] text-md font-normal mb-4 block">
                     #1 AI-Powered Recruitment in India
                   </span>
-                <h1 className="text-[#2d3135] text-4xl md:text-5xl font-black mb-12 max-w-4xl mx-auto">
-                    Revolutionizing Recruitment with AI<br/>
+                <h1 className="text-[#2d3135] text-5xl md:text-5xl font-black mb-12 max-w-4xl mx-auto">
+                    Revolutionize Hiring with AI<br/>
                     Hire Top Talent in Under
                     <span className="text-[#295EC9]"> 24 Hours</span>
                 </h1>
-                <p className="text-[#2d3135] text-sm font-light max-w-2xl mx-auto mb-12">
-                    Experience the future of hiring with our AI-driven platform that
-                    rapidly sources, screens, interviews, and evaluates candidates
-                    tailored to your exact requirements—streamlining your recruitment
-                    process in a single day.
-                </p>
+                <h4 className="text-[#2d3135] text-md font-light max-w-2xl mx-auto mb-12">
+                    Our AI-driven platform sources, screens, interviews, and evaluates candidates quickly and efficiently, making your hiring process seamless.
+                </h4>
 
                 {/* Calendly Form */}
                 <div className="flex justify-center items-center gap-4">

@@ -56,12 +56,9 @@ function CorporateCarousel() {
   const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img11, img12, img13];
 
   return (
-    <div className="bg-white-50 flex flex-col items-center embla w-full h-auto mt-28 mb-2 mx-auto">
-      <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center px-4">
-        Transforming Recruitment For 15,000+ Businesses Globally
-      </h1>
+    <div className="bg-white-50 flex flex-col items-center embla max-w-4xl h-auto mt-24 mb-2 mx-auto">
       <div className="w-full overflow-hidden mt-8" ref={emblaRef}>
-        <div className="flex gap-20 md:gap-20 px-4">
+        <div className="flex gap-12">
           {images.map((img, index) => (
             <div
               key={index}
@@ -71,7 +68,7 @@ function CorporateCarousel() {
               <img
                 src={img}
                 alt={`Slide ${index + 1}`}
-                className={`w-[100] h-[100px] md:h-[100px] object-cover rounded-lg transition-all duration-500 ${activeImageIndexes[index] ? 'grayscale-0' : 'grayscale'} hover:grayscale-0`}
+                className={`w-[100] h-[80px] object-cover rounded-lg transition-all duration-500 ${activeImageIndexes[index] ? 'grayscale-0' : 'grayscale'} hover:grayscale-0`}
               />
               {/* <p className="text-center text-sm md:text-base font-semibold mt-2">{imageCaptions[index]}</p> */}
             </div>
