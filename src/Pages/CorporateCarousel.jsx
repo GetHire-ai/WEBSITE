@@ -14,9 +14,7 @@ import img11 from '../Assets/th (3).jpeg';
 import img12 from '../Assets/320-3200013_white-elephant-tech-white-elephant-tech-web-development.png';
 import img13 from '../Assets/logo-white.png';
 
-import CorporateFeatures from './CorporateFeatures';
-
-function CorporateCrousel() {
+function CorporateCarousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     AutoScroll({ interval: 4000, stopOnInteraction: true }),
   ]);
@@ -84,4 +82,4 @@ function CorporateCrousel() {
   );
 }
 
-export default CorporateCrousel;
+export default CorporateCarousel;

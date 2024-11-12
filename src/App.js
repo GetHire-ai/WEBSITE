@@ -23,6 +23,7 @@ import Corporate from './Pages/Corporate';
 import Collage from './Pages/Collage';
 import Pricing from './Pages/Pricing';
 import './App.css'
+import CorporateWaitlist from "./Pages/CorporateWaitlist";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
     {/* <Route path="/" element={<Coming/>}/> */}
 
     <Route path="/" element={<Corporate/>}/>
+    <Route path="/join-waitlist" element={<CorporateWaitlist/>}/>
 
     <Route path="/_home" element={<Home/>}/>
     <Route path="/mock-interview" element={<MockInterview/>}/>

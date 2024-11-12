@@ -46,7 +46,7 @@ function Navbar() {
 
             {/* Join Waitlist Button */}
             <div className="flex-none hidden sm:flex">
-              <Link to="/corporate-waitlist" className="no-underline">
+              <Link to="/join-waitlist" className="no-underline">
                 <button
                     className="bg-[#FFA500] hover:bg-[#FF8C00] rounded-full text-white font-light px-4 py-2 transition-colors duration-300 ease-in-out">
                   Join Waitlist

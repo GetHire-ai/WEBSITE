@@ -5,10 +5,10 @@ import {FaEnvelope, FaPhone, FaWhatsapp} from 'react-icons/fa';
 function Footer() {
   return (
       <footer className="bg-gray-900 text-white px-4">
-        <div className="container flex flex-row sm:flex-col justify-between items-center">
+        <div className="container flex flex-col md:flex-row lg:flex-row justify-between items-center">
 
           {/* Logo and Contact */}
-          <div className="mb-8 text-left w-full sm:w-auto gap-1">
+          <div className="my-8 text-left w-full sm:w-auto gap-1">
 
 
             <div className="flex flex-col gap-1">
@@ -76,9 +76,9 @@ function Footer() {
 
 
         </div>
-        <div className="mx-auto mt-8 pb-2 text-center justify-center">
-          <p className="text-sm font-poppins">©2024 GetHireAI®. All rights reserved worldwide.</p>
-        </div>
+          <div className="mx-auto mt-8 pb-2 text-center justify-center">
+            <p className="text-sm font-poppins">©2024 GetHireAI®. All rights reserved worldwide.</p>
+          </div>
       </footer>
   );
 }
