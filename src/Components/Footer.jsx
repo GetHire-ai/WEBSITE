@@ -1,178 +1,85 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./header.css";
+import {Link} from "react-router-dom";
+import {FaEnvelope, FaPhone, FaWhatsapp} from 'react-icons/fa';
 
 function Footer() {
   return (
-    <>
-      <footer>
-        <div className="flex sm:flex-row flex-col justify-between items-start">
-          <div>
-            <div className="bg-[#FFFFFF] px-[20px] py-[10px] rounded-[6px]">
-              <Link to="/" className="m-0">
-                <img
-                  src="/assets/home/logo.svg"
-                  className="h-[60px] object-cover"
-                  alt=""
-                />
-              </Link>
+      <footer className="bg-gray-900 text-white px-4">
+        <div className="container flex flex-row sm:flex-col justify-between items-center">
+
+          {/* Logo and Contact */}
+          <div className="mb-8 text-left w-full sm:w-auto gap-1">
+
+
+            <div className="flex flex-col gap-1">
+              <div className="self-center">
+                <Link to="/" className="block">
+                  <img
+                      src="/gethireai_logo_dark.png"
+                      alt="Gethire AI Logo"
+                      className="h-16"
+                  />
+                </Link>
+              </div>
+              <div className="m-1 text-md text-gray-200 font-semibold">#1 AI-Powered Recruitment in India</div>
             </div>
-            <p className="text-[#FFFFFF] font-[Poppins] pt-[10px]">
-              World’s #1st AI Recruitment Platform
-            </p>
-            <h6 className="text-[#FFFFFF] text-[24px] pb-[16px] font-[500] pt-[10px]">
-              Let's Connect
-            </h6>
-            <div className="flex gap-[10px] items-center pb-[20px]">
-              <i className="fa-regular fa-envelope text-[#FFFFFF] text-[24px]"></i>
-              <p className="mb-0 font-[Poppins] text-[#FFFFFF]">
-                info@gethire.ai  
-              </p>
+
+            <div className="flex flex-col gap-1 my-8 mx-2">
+              <div className="text-xl font-semibold">Let's Connect</div>
+              <div className="flex flex-row my-1 gap-2 text-center">
+                <FaEnvelope className="h-5 w-5"/>
+                <a href="mailto:info@gethire.ai" className="no-underline text-sm text-gray-50">info@gethire.ai</a>
+              </div>
+              <div className="flex gap-2">
+                <FaWhatsapp className="h-5 w-5"></FaWhatsapp>
+                <a href="https://wa.me/917000901605?text=Hi%20Naman,%0AI'm%20a%20recruiter%20and%20I'd%20like%20to%20learn%20more%20about%20gethire.ai.%20When%20can%20we%20connect?"
+                   className="no-underline text-sm text-gray-50"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  +91 7000901605
+                </a>
+              </div>
             </div>
-            <div className="flex gap-[10px] items-center pb-[20px]">
-              <i className="fa-solid fa-phone text-[#FFFFFF] text-[24px]"></i>
-              <p className="mb-0 font-[Poppins] text-[#FFFFFF]">
-                +91 7000901605 
-              </p>
+
+            <div className="flex justify-center sm:justify-start space-x-8 mb-6">
+              {["fa-instagram", "fa-linkedin-in", "fa-facebook", "fa-twitter"].map((icon, index) => (
+                  <Link key={index} to="" className="text-2xl">
+                    <i className={`fa-brands ${icon}`}></i>
+                  </Link>
+              ))}
             </div>
-            <div className="flex items-center gap-[36px]">
-              <Link to="">
-                <i className="fa-brands fa-instagram text-[#FFFFFF] text-[36px]"></i>
-              </Link>
-              <Link to="">
-                <i className="fa-brands fa-linkedin-in text-[#FFFFFF] text-[36px]"></i>
-              </Link>
-              <Link to="">
-                <i className="fa-brands fa-facebook text-[#FFFFFF] text-[36px]"></i>
-              </Link>
-              <Link to="">
-                <i className="fa-brands fa-twitter text-[#FFFFFF] text-[36px]"></i>
-              </Link>
-            </div>
-            <p className="pt-[30px] font-[Poppins] text-[#FFFFFF]">
-              ©2024 Gethire AI ® . All rights reserved worldwide.
-            </p>
           </div>
-          <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-[80px] gap-[40px]">
+
+          {/* Navigation Links */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 sm:gap-x-16">
             <div>
-              <h6 className="text-[#FFFFFF] font-[Poppins] font-[500] text-[22px] pb-[26px]">
-                Learn More
-              </h6>
-              <ul className="m-0 p-0 flex flex-col gap-[20px]">
-                <li className="font-[Poppins] text-[#FFFFFF] text-[16px] font-[400]">
-                  <Link className="no-underline font-[Poppins] text-[#FFFFFF] text-[16px] font-[400]">
-                    Leadership
-                  </Link>
-                </li>
-                <li className="font-[Poppins] text-[#FFFFFF] text-[16px] font-[400]">
-                  <Link className="no-underline font-[Poppins] text-[#FFFFFF] text-[16px] font-[400]">
-                    Talent Intelligence Platform
-                  </Link>
-                </li>
-                <li className="font-[Poppins] text-[#FFFFFF] text-[16px] font-[400]">
-                  <Link className="no-underline font-[Poppins] text-[#FFFFFF] text-[16px] font-[400]">
-                    Careers
-                  </Link>
-                </li>
-                <li className="font-[Poppins] text-[#FFFFFF] text-[16px] font-[400]">
-                  <Link className="no-underline font-[Poppins] text-[#FFFFFF] text-[16px] font-[400]">
-                    Contact us
-                  </Link>
-                </li>
-                <li className="font-[Poppins] text-[#FFFFFF] text-[16px] font-[400]">
-                  <Link className="no-underline font-[Poppins] text-[#FFFFFF] text-[16px] font-[400]">
-                    Responsive AI at Eightfold
-                  </Link>
-                </li>
-                <li className="font-[Poppins] text-[#FFFFFF] text-[16px] font-[400]">
-                  <Link className="no-underline font-[Poppins] text-[#FFFFFF] text-[16px] font-[400]">
-                    Glossary
-                  </Link>
-                </li>
+              <h6 className="text-lg font-semibold mb-4">Learn More</h6>
+              <ul className="space-y-3">
+                {["Leadership", "Talent Intelligence Platform", "Careers", "Contact us", "Responsive AI at Eightfold", "Glossary"].map((item, index) => (
+                    <li key={index}>
+                      <Link to="#" className="text-sm font-poppins text-white no-underline">{item}</Link>
+                    </li>
+                ))}
               </ul>
             </div>
             <div>
-              <h6 className="text-[#FFFFFF] font-[Poppins] font-[500] text-[22px] pb-[26px]">
-                Privacy & Legal
-              </h6>
-              <ul className="m-0 p-0 flex flex-col gap-[20px]">
-                <li className="font-[Poppins] text-[#FFFFFF] text-[16px] font-[400]">
-                  <Link className="no-underline font-[Poppins] text-[#FFFFFF] text-[16px] font-[400]">
-                    Privacy policy
-                  </Link>
-                </li>
-                <li className="font-[Poppins] text-[#FFFFFF] text-[16px] font-[400]">
-                  <Link className="no-underline font-[Poppins] text-[#FFFFFF] text-[16px] font-[400]">
-                    Governance
-                  </Link>
-                </li>
-                <li className="font-[Poppins] text-[#FFFFFF] text-[16px] font-[400]">
-                  <Link className="no-underline font-[Poppins] text-[#FFFFFF] text-[16px] font-[400]">
-                    Cookie notice
-                  </Link>
-                </li>
+              <h6 className="text-lg font-semibold mb-4">Privacy & Legal</h6>
+              <ul className="space-y-3">
+                {["Privacy policy", "Governance", "Cookie notice"].map((item, index) => (
+                    <li key={index}>
+                      <Link to="#" className="text-sm font-poppins text-white no-underline">{item}</Link>
+                    </li>
+                ))}
               </ul>
             </div>
           </div>
+
+
         </div>
-        {/* <div className="footer-top">
-          <div className="f1">
-            <div className="logo">
-              <Link to="/" className="m-0">
-                <img
-                  src="/assets/home/logo.svg"
-                  className="h-[60px] object-cover"
-                  alt=""
-                />
-              </Link>
-            </div>
-            <br />
-            <h3>Mission</h3>
-            <br />
-            <p>
-              We are a social enterprise on a mission to accelerate the
-              regeneration of nature. We enable companies to gift trees that are
-              brought back in the heart of Africa. Easily, at scale, and with an
-              epic customizable gifting experience.
-            </p>
-            <br />
-            <h4>Sign up for Our Newsletter</h4>
-            <br />
-            <div className="footerinput">
-              {" "}
-              <input placeholder="Enter your email" />
-              <button>Sign Up</button>
-            </div>
-          </div>
-          <div className="f2">
-            <ul>
-              Pages
-              <li>Plateform</li>
-              <li>Solution</li>
-              <li>Resources</li>
-              <li>Our Customers</li>
-              <li>Event</li>
-            </ul>
-          </div>
-          <div className="f3">
-            <h5>Registration for sponsorship & collaboration</h5>
-            <br /> <button>REGISTER</button>
-            <br />
-            <br />
-            <h3>Contact Info</h3>
-            <br />
-            <h2>+4863154859</h2>
-          </div>
+        <div className="mx-auto mt-8 pb-2 text-center justify-center">
+          <p className="text-sm font-poppins">©2024 GetHireAI®. All rights reserved worldwide.</p>
         </div>
-        <div className="footer-bottom">
-          <ul>
-            <li>Terms and condition</li>
-            <li>Privacy policy</li>
-            <li>All rights reserved gethire.ai..</li>
-          </ul>
-        </div> */}
       </footer>
-    </>
   );
 }
 
