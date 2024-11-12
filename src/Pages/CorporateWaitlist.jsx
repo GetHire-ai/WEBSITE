@@ -1,10 +1,49 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import JoinWaitlistCarousel from "../Components/JoinWaitlistCarousel";
 
 const DemoRequestComponent = () => {
 
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        companyName: '',
+        describe: '',
+        phone: '',
+        email: ''
+    });
+    const [isSubmitted, setIsSubmitted] = useState(false);
 
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.id]: e.target.value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await fetch('http://localhost:3000/api/join-waitlist', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+            if (response.ok) {
+                setIsSubmitted(true);
+            } else {
+                console.error('Failed to submit');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    };
+
+    if (isSubmitted) {
+        return (
+            <div className="w-full md:w-1/2 bg-white p-10">
+                <h2 className="text-2xl font-bold mb-4">Thank you!</h2>
+                <p className="mb-6">Your request has been submitted successfully. We'll get in touch soon.</p>
+            </div>
+        );
+    }
     return (
         <div className="flex flex-row min-h-screen">
             <div className="w-full md:w-1/2 bg-black text-white p-10 relative">
@@ -53,25 +92,29 @@ const DemoRequestComponent = () => {
             </div>
             <div className="w-full md:w-1/2 bg-white p-10">
                 <h2 className="text-2xl font-bold mb-4">Join our product waitlist</h2>
-                <p className="mb-6"><p className="mb-6">Our product is in beta. Please share your details to qualify for beta access.</p>
-                    goals.</p>
-                <form>
+                <p className="mb-6"><p className="mb-6">Our product is in beta. Please share your details to qualify for
+                    beta access.</p>
+                    goals.
+                </p>
+                <form onSubmit={handleSubmit}>
                     <div className="mb-4">
                         <label htmlFor="firstName" className="block text-gray-700 mb-2">First Name*</label>
-                        <input type="text" id="firstName" className="w-full border p-2 rounded" required/>
+                        <input type="text" id="firstName" className="w-full border p-2 rounded" required
+                               onChange={handleChange}/>
                     </div>
                     <div className="mb-4">
                         <label htmlFor="lastName" className="block text-gray-700 mb-2">Last Name*</label>
-                        <input type="text" id="lastName" className="w-full border p-2 rounded" required/>
+                        <input type="text" id="lastName" className="w-full border p-2 rounded" required
+                               onChange={handleChange}/>
                     </div>
                     <div className="mb-4">
                         <label htmlFor="companyName" className="block text-gray-700 mb-2">Company Name*</label>
-                        <input type="text" id="companyName" className="w-full border p-2 rounded" required/>
+                        <input type="text" id="companyName" className="w-full border p-2 rounded" required
+                               onChange={handleChange}/>
                     </div>
                     <div className="mb-4">
-                        <label htmlFor="describe" className="block text-gray-700 mb-2">What best describes you?
-                            *</label>
-                        <select id="describe" className="w-full border p-2 rounded" required>
+                        <label htmlFor="describe" className="block text-gray-700 mb-2">What best describes you?*</label>
+                        <select id="describe" className="w-full border p-2 rounded" required onChange={handleChange}>
                             <option>Select one...</option>
                             <option>CEO/CTO/CMO/Owner</option>
                             <option>Recruiter</option>
@@ -81,14 +124,14 @@ const DemoRequestComponent = () => {
                     </div>
                     <div className="mb-4">
                         <label htmlFor="phone" className="block text-gray-700 mb-2">Phone Number</label>
-                        <input type="tel" id="phone" className="w-full border p-2 rounded"
-                               placeholder="(201) 555-0123"/>
+                        <input type="tel" id="phone" className="w-full border p-2 rounded" onChange={handleChange}/>
                     </div>
                     <div className="mb-4">
                         <label htmlFor="email" className="block text-gray-700 mb-2">Work Email*</label>
-                        <input type="email" id="email" className="w-full border p-2 rounded" required/>
+                        <input type="email" id="email" className="w-full border p-2 rounded" required
+                               onChange={handleChange}/>
                     </div>
-                    <button type="submit" className="bg-orange-500 text-white px-6 py-3 rounded-full">Join Waitlist</button>
+                    <button type="submit" className="bg-orange-500 text-white px-6 py-3 rounded">Request Demo</button>
                 </form>
             </div>
         </div>

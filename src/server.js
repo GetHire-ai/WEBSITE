@@ -17,7 +17,7 @@ mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .catch(err => console.error('MongoDB connection error:', err));
 
 // Mongoose Schema
-const RequestSchema = new mongoose.Schema({
+const WaitlistSchema = new mongoose.Schema({
     firstName: String,
     lastName: String,
     companyName: String,
@@ -26,12 +26,12 @@ const RequestSchema = new mongoose.Schema({
     email: String,
 });
 
-const Request = mongoose.model('Request', RequestSchema);
+const Waitlist = mongoose.model('Waitlist', WaitlistSchema);
 
 // Routes
-app.post('/api/requests', async (req, res) => {
+app.post('/api/join-waitlist', async (req, res) => {
     try {
-        const newRequest = new Request(req.body);
+        const newRequest = new Waitlist(req.body);
         await newRequest.save();
         res.status(201).json({ message: 'Request submitted successfully' });
     } catch (error) {
