@@ -23,14 +23,14 @@ const DemoRequestComponent = () => {
                             <img
                                 src="/gethireai_logo_dark.png"
                                 alt="Gethire AI Logo"
-                                className="h-16"
+                                className="h-10"
                             />
                         </Link>
                     </div>
 
                     <h1 className="text-4xl font-bold mb-6">Hire faster & smarter with GetHireAI</h1>
                     <p className="mb-4">What to expect:</p>
-                    <ul className="list-disc pl-5 mb-6">
+                    <ul className="list-disc pl-5 mb-6 gap-2">
                         <li>A personalized demo of the GetHireAI All-In-One ATS, tailored to your specific needs and
                             goals.
                         </li>
@@ -52,8 +52,8 @@ const DemoRequestComponent = () => {
                 </div>
             </div>
             <div className="w-full md:w-1/2 bg-white p-10">
-                <h2 className="text-2xl font-bold mb-4">Request a product walkthrough</h2>
-                <p className="mb-6">Book a 30-minute demo to see how GetHireAI can help you crush your recruiting
+                <h2 className="text-2xl font-bold mb-4">Join our product waitlist</h2>
+                <p className="mb-6"><p className="mb-6">Our product is in beta. Please share your details to qualify for beta access.</p>
                     goals.</p>
                 <form>
                     <div className="mb-4">
@@ -88,7 +88,7 @@ const DemoRequestComponent = () => {
                         <label htmlFor="email" className="block text-gray-700 mb-2">Work Email*</label>
                         <input type="email" id="email" className="w-full border p-2 rounded" required/>
                     </div>
-                    <button type="submit" className="bg-orange-500 text-white px-6 py-3 rounded">Request Demo</button>
+                    <button type="submit" className="bg-orange-500 text-white px-6 py-3 rounded-full">Join Waitlist</button>
                 </form>
             </div>
         </div>
