@@ -25,9 +25,10 @@ function Navbar() {
             <div className={`fixed inset-0 sm:bg-transparent sm:flex sm:relative z-40 transition-transform ${sidebarToggle ? "translate-x-0" : "translate-x-full sm:translate-x-0"}`}>
               <ul className="flex flex-col sm:flex-row pl-0 items-center sm:gap-6 gap-8 m-0 py-8 sm:py-0 sm:w-auto w-full">
                 <li className="list-item">
-                  <Link to="/" onClick={() => setSidebarToggle(false)} className="no-underline text-lg text-gray-800 font-semibold py-2 sm:py-0">
+                  <a href="#home" onClick={() => setSidebarToggle(false)}
+                     className="no-underline text-lg text-gray-800 font-semibold py-2 sm:py-0">
                     Home
-                  </Link>
+                  </a>
                 </li>
                 <li className="list-item">
                   <a href="#features" onClick={() => setSidebarToggle(false)}
