@@ -17,10 +17,10 @@ function CorporatePricing() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <PlanCard
                         title="Basic"
-                        price="₹2000"
+                        price="₹3000/month"
                         description="Ideal for early stage startups or businesses hiring occasionally"
                         features={[
-                            "1 job post",
+                            "10 job post",
                             "Shortlisted candidates in less than 24 hours",
                             { text: "Interviewed candidates with overall fitment score", available: false },
                             { text: "Job Boost for 10X talent pool", available: false },
@@ -33,15 +33,15 @@ function CorporatePricing() {
                     />
                     <PlanCard
                         title="GetHire Plus"
-                        price="₹3000"
+                        price="₹5000/month"
                         description="Best for small to medium-sized businesses with urgent hiring needs"
                         features={[
-                            "1 job post",
-                            "₹100 onboarding credit",
+                            "20 job post",
                             "Shortlisted candidates in less than 24 hours",
-                            "Interviewed candidates with overall fitment score",
-                            "Job Boost for 10X talent pool",
-                            "Urgent hiring support",
+                            { text: "Interviewed candidates with overall fitment score", available: true },
+                            { text: "Job Boost for 10X talent pool", available: true },
+                            { text: "Premium placement for urgent hiring", available: true },
+                            { text: "Instant feedback for employer branding", available: true },
                         ]}
                         buttonText="Post job now"
                         buttonStyle="bg-[#316EDC] text-white hover:bg-[#295EC9] border hover:border-[#2570b8]"
@@ -53,10 +53,8 @@ function CorporatePricing() {
                         price="Custom"
                         description="Tailored for large businesses requiring end-to-end hiring solutions"
                         features={[
-                            "Unlimited job posts**",
-                            "Unlimited shortlisted and interviewed candidates, 24x7",
-                            "Unlimited job boosts for 10X talent pool",
-                            "Access to 10M+ verified talent pool",
+                            "Everything in GetHire Plus",
+                            "Unlimited job posts",
                             "High priority placement for all jobs",
                             "Dedicated account manager",
                         ]}
