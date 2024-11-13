@@ -1,3 +1,5 @@
+// src/server.js
+
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -13,6 +15,7 @@ app.use(cors({
     origin: 'http://localhost:3000', // Allow only your React app
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true, // Add if cookies are involved
 }));
 
 // Handle preflight requests globally
