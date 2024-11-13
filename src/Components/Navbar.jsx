@@ -36,9 +36,10 @@ function Navbar() {
                   </a>
                 </li>
                 <li className="list-item">
-                  <Link to="/pricing" onClick={() => setSidebarToggle(false)} className="no-underline text-lg text-gray-800 font-semibold py-2 sm:py-0">
+                  <a href="#pricing" onClick={() => setSidebarToggle(false)}
+                     className="no-underline text-lg text-gray-800 font-semibold py-2 sm:py-0">
                     Pricing
-                  </Link>
+                  </a>
                 </li>
                 <li className="list-item">
                   <div className="flex flex-row">

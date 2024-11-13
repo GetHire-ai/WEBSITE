@@ -5,7 +5,7 @@ function FAQs() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(Array(5).fill(false));
 
     return (
-        <section className="max-w-3xl mx-auto my-16">
+        <section className="container max-w-3xl mx-auto my-16">
             <h2 className="text-4xl font-bold text-center mb-8 text-[#3e3e3e]">FAQs</h2>
             <div className="space-y-4">
                 {[

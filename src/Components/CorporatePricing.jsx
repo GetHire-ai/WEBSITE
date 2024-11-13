@@ -4,7 +4,7 @@ function CorporatePricing() {
 
 
     return (
-        <section className="py-24">
+        <section id="pricing" className="py-24">
             <div className="max-w-4xl m-auto">
                 <div className="text-center font-bold text-6xl leading-tight text-gray-800 pb-2 mb-12">
                     Hiring plans that meet your
