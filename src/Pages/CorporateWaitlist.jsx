@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import JoinWaitlistCarousel from "../Components/JoinWaitlistCarousel";
 
@@ -18,6 +18,11 @@ const DemoRequestComponent = () => {
         backgroundSize: '400% 400%',
         animation: 'gradientMove 8s ease infinite'
     };
+
+    useEffect(() => {
+        document.title = "GetHireAI - #1 AI-Powered Recruitment in India";
+    }, []);
+
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.id]: e.target.value });

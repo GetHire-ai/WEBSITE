@@ -1,9 +1,8 @@
-import {BrowserRouter as Router , Routes , Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './Pages/Home';
 import PageTwo from './Pages/PageTwo';
 import HowWorks from './Pages/HowWorks';
 import WorkWithUs from './Pages/WorkWithUs';
-import Blog from './Pages/Blog';
 import BlogDetail from './Pages/BlogDetail';
 import Technology from './Pages/Technology';
 import AboutUs from './Pages/AboutUs';
@@ -12,7 +11,6 @@ import News from './Pages/News';
 import NewsDetail from './Pages/NewsDetail';
 // import Pricing from './Pages/Pricing';
 import Candidate from './Pages/Candidate';
-import Coming from './Pages/Coming';
 import MockInterview from './Pages/MockInterview';
 import Feature from './Pages/Feature';
 import Career from './Pages/Career';
