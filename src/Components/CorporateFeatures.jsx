@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../Components/header.css";
+import "./header.css";
 
 // Import images
 import emp1 from "../Assets/image1-2-1-768x531.png";
@@ -157,16 +157,17 @@ const CONTENT = {
         ),
     ],
 };
-// Generic function to render content based on the active tab
+
 const renderTabContent = (tabContent) => (
-    <div className="container mx-auto p-6">
-        <div className="flex flex-row space-x-6">
+    <div className="container mx-auto p-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {tabContent.map((block, index) => (
-                <div key={index}
-                     className="w-full md:w-1/2 lg:w-1/3 mb-6 border border-sky-200 p-6 rounded-lg shadow-lg shadow-green-500 text-left">
-                        <h2 className="font-bold text-2xl mb-4">{block.title}</h2>
-                        <p className="text-lg leading-relaxed">{block.description}</p>
-                        <img src={block.imageSource} className="w-full rounded-lg mt-4" alt={block.title} />
+                <div
+                    key={index}
+                    className="border border-sky-200 p-6 rounded-lg shadow-lg shadow-green-500 text-left">
+                    <h2 className="font-bold text-xl md:text-2xl mb-4">{block.title}</h2>
+                    <p className="text-base md:text-lg leading-relaxed">{block.description}</p>
+                    <img src={block.imageSource} className="w-full rounded-lg mt-4" alt={block.title} />
                 </div>
             ))}
         </div>
@@ -174,39 +175,40 @@ const renderTabContent = (tabContent) => (
 );
 
 function CorporateFeatures() {
-    const[activeTab, setActiveTab] = useState(TABS[0]);
+    const [activeTab, setActiveTab] = useState(TABS[0]);
 
-    console.log(activeTab)
     return (
-        <div id="features" className="text-black border rounded p-4 m-48">
-            <div className="text-center my-4 mt-5" style={{height: 'auto', width: '80%', margin: '0 auto'}}>
-                <h2 className="py-[32px] font-[Poppins] font-[900] text-[60px] leading-[76px]">
+        <section id="features" className="text-black p-4 mx-auto max-w-7xl">
+            <div className="text-center my-6">
+                <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold leading-tight">
                     Everything You Need To Make Hiring Effortless
                 </h2>
-                <p className="font-weight-bold lead">
-                    <b>Attract top talent, manage applicants with advanced tools and onboard seamlessly with our
-                        all-in-one recruitment SaaS platform</b>
+                <p className="font-medium text-base md:text-lg mt-4">
+                    Attract top talent, manage applicants with advanced tools and onboard seamlessly
+                    with our all-in-one recruitment SaaS platform.
                 </p>
             </div>
-            <div className="mx-auto max-w-7xl">
-                <ul className="pt-3 flex flex-row w-fit gap-8 justify-content-center">
+            <div className="mx-auto max-w-5xl">
+                <ul className="flex flex-wrap justify-center gap-4 md:gap-6">
                     {TABS.map((tab) => (
-                        <li className="cursor-pointer" key={tab}>
+                        <li key={tab} className="cursor-pointer">
                             <p
                                 onClick={() => setActiveTab(tab)}
                                 className={`px-4 py-2 transition-all duration-300 
-                                    ${activeTab === tab ? "bg-gradient-to-r from-green-100 to-blue-200" : "border-transparent"}
-                                    hover:bg-blue-100 rounded-xl`}>
+                                    ${activeTab === tab
+                                    ? "bg-gradient-to-r from-green-100 to-blue-200"
+                                    : "hover:bg-blue-100"
+                                } rounded-xl text-sm md:text-base`}>
                                 {tab}
                             </p>
                         </li>
                     ))}
                 </ul>
             </div>
-            <div className="container mx-auto p-4">
+            <div className="mt-6">
                 {renderTabContent(CONTENT[activeTab])}
             </div>
-        </div>
+        </section>
     );
 }
 

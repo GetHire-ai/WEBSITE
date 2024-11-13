@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import CorporateFeatures from "./CorporateFeatures";
+import CorporateFeatures from "../Components/CorporateFeatures";
 import CorporateCarousel from "./CorporateCarousel";
 
 // Import images
