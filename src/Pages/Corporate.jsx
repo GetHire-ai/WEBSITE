@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import CorporateFeatures from "../Components/CorporateFeatures";
@@ -12,26 +12,29 @@ import CorporateTrustSection from "../Components/CorporateTrustSection";
 import CorporatePricing from "../Components/CorporatePricing";
 
 const Corporate = () => {
+    useEffect(() => {
+        document.title = "GetHireAI - #1 AI-Powered Recruitment in India";
+    }, []);
 
-  return (
-      <div className="min-h-screen bg-white">
-        {/* Existing Navbar */}
-        <Navbar/>
-        <CorporateHeroSection/>
-        <CorporateCarousel/>
+    return (
+        <div className="min-h-screen bg-white">
+            {/* Existing Navbar */}
+            <Navbar/>
+            <CorporateHeroSection/>
+            <CorporateCarousel/>
 
-          <CorporateTrustSection/>
-          <CorporateFeatures/>
-          <CorporateAISection/>
-          <CorporatePricing/>
+            <CorporateTrustSection/>
+            <CorporateFeatures/>
+            <CorporateAISection/>
+            <CorporatePricing/>
 
-        {/* FAQ Section */}
-        <FAQs/>
-        <Footer/>
+            {/* FAQ Section */}
+            <FAQs/>
+            <Footer/>
 
-        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"/>
-      </div>
-  );
+            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"/>
+        </div>
+    );
 };
 
 export default Corporate;

@@ -10,12 +10,10 @@ const PORT = 5000;
 
 // Middleware
 app.use(bodyParser.json());
-// Correct and robust CORS setup
 app.use(cors({
-    origin: 'http://localhost:3000', // Allow only your React app
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-    credentials: true, // Add if cookies are involved
+    origin: 'http://localhost:3000',
+    methods: ['GET', 'POST', 'OPTIONS'],
+    credentials: true,
 }));
 
 // Handle preflight requests globally
@@ -45,13 +43,14 @@ const WaitlistSchema = new mongoose.Schema({
 
 const Waitlist = mongoose.model('Waitlist', WaitlistSchema);
 
-// Routes
 app.post('/api/join-waitlist', async (req, res) => {
+    console.log('Request received:', req.body);
     try {
         const newRequest = new Waitlist(req.body);
         await newRequest.save();
         res.status(201).json({ message: 'Request submitted successfully' });
     } catch (error) {
+        console.error('Error:', error);
         res.status(500).json({ error: 'Error submitting request' });
     }
 });

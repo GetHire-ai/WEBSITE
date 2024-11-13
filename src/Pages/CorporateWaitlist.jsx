@@ -26,7 +26,7 @@ const DemoRequestComponent = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:5000/api/join-waitlist', {
+            const response = await fetch('/api/join-waitlist', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
@@ -53,7 +53,7 @@ const DemoRequestComponent = () => {
     return (
         <div className="flex flex-col md:flex-row-reverse min-h-screen">
 
-            <div className="w-full md:w-1/2 lg:w-1/2 bg-white p-10">
+            <div className="w-full md:w-1/2 lg:w-1/2 bg-white p-10 z-10">
                 <div className="mb-4">
                     <Link to="/" className="block">
                         <img
@@ -104,14 +104,14 @@ const DemoRequestComponent = () => {
                 </form>
             </div>
             <div className="w-full md:w-1/2 lg:w-1/2 bg-black text-white p-10 relative">
-                {/*<div*/}
-                {/*    className="fixed inset-0 md:w-1/2 w-full left-0 h-full bg-center bg-cover bg-no-repeat z-0"*/}
-                {/*    style={{*/}
-                {/*        backgroundImage: "url('/join_waitlist.png')",*/}
-                {/*        backgroundPosition: "center bottom",*/}
-                {/*        filter: "blur(1px)"*/}
-                {/*    }}*/}
-                {/*></div>*/}
+                <div
+                    className="fixed inset-0 md:w-1/2 w-full left-0 h-full bg-center bg-cover bg-no-repeat z-0"
+                    style={{
+                        backgroundImage: "url('/join_waitlist.png')",
+                        backgroundPosition: "center bottom",
+                        filter: "blur(1px)"
+                    }}
+                ></div>
                 <div className="p-10 relative z-10">
 
                     <h1 className="text-4xl font-bold mb-6">Hire faster & smarter with GetHireAI</h1>
