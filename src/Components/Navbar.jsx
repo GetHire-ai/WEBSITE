@@ -79,13 +79,13 @@ function Navbar() {
             </div>
 
             {/* Join Waitlist Button */}
-            <div className="flex">
-              <Link to="/join-waitlist" className="no-underline">
-                <button className="bg-[#FFA500] hover:bg-[#FF8C00] rounded-full text-white font-light px-4 py-2 transition-colors duration-300">
-                  Join Waitlist
-                </button>
-              </Link>
-            </div>
+            {/*<div className="flex">*/}
+            {/*  <Link to="/join-waitlist" className="no-underline">*/}
+            {/*    <button className="bg-[#FFA500] hover:bg-[#FF8C00] rounded-full text-white font-light px-4 py-2 transition-colors duration-300">*/}
+            {/*      Join Waitlist*/}
+            {/*    </button>*/}
+            {/*  </Link>*/}
+            {/*</div>*/}
 
             {/* Sidebar toggle button */}
             <div className="flex sm:hidden">

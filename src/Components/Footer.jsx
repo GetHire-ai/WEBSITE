@@ -5,7 +5,7 @@ import {FaEnvelope, FaPhone, FaWhatsapp} from 'react-icons/fa';
 function Footer() {
   return (
       <footer className="bg-gray-900 text-white px-4">
-        <div className="container flex flex-col md:flex-row lg:flex-row justify-between items-center">
+        <div className="container flex flex-col md:flex-row lg:flex-row justify-evenly items-center">
 
           {/* Logo and Contact */}
           <div className="my-8 text-left w-full sm:w-auto gap-1">
@@ -41,33 +41,33 @@ function Footer() {
               </div>
             </div>
 
-            <div className="flex justify-center sm:justify-start space-x-8 mb-6">
-              {["fa-instagram", "fa-linkedin-in", "fa-facebook", "fa-twitter"].map((icon, index) => (
-                  <Link key={index} to="" className="text-2xl">
-                    <i className={`fa-brands ${icon}`}></i>
-                  </Link>
-              ))}
-            </div>
+            {/*<div className="flex justify-center sm:justify-start space-x-8 mb-6">*/}
+            {/*  {["fa-instagram", "fa-linkedin-in", "fa-facebook", "fa-twitter"].map((icon, index) => (*/}
+            {/*      <Link key={index} to="" className="text-2xl">*/}
+            {/*        <i className={`fa-brands ${icon}`}></i>*/}
+            {/*      </Link>*/}
+            {/*  ))}*/}
+            {/*</div>*/}
           </div>
 
           {/* Navigation Links */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 sm:gap-x-16">
-            <div>
-              <h6 className="text-lg font-semibold mb-4">Learn More</h6>
-              <ul className="space-y-3">
-                {["Leadership", "Talent Intelligence Platform", "Careers", "Contact us", "Responsive AI at Eightfold", "Glossary"].map((item, index) => (
-                    <li key={index}>
-                      <Link to="#" className="text-sm font-poppins text-white no-underline">{item}</Link>
-                    </li>
-                ))}
-              </ul>
-            </div>
+            {/*<div>*/}
+            {/*  <h6 className="text-lg font-semibold mb-4">Learn More</h6>*/}
+            {/*  <ul className="space-y-3">*/}
+            {/*    {["Leadership", "Talent Intelligence Platform", "Careers", "Contact us", "Responsive AI at Eightfold", "Glossary"].map((item, index) => (*/}
+            {/*        <li key={index}>*/}
+            {/*          <Link to="#" className="text-sm font-poppins text-white no-underline">{item}</Link>*/}
+            {/*        </li>*/}
+            {/*    ))}*/}
+            {/*  </ul>*/}
+            {/*</div>*/}
             <div>
               <h6 className="text-lg font-semibold mb-4">Privacy & Legal</h6>
               <ul className="space-y-3">
-                {["Privacy policy", "Governance", "Cookie notice"].map((item, index) => (
+                {[{url: "/privacy-policy", label: "Privacy policy"}, {url: "/terms-of-service", label: "Terms of Service"}].map((item, index) => (
                     <li key={index}>
-                      <Link to="#" className="text-sm font-poppins text-white no-underline">{item}</Link>
+                      <a href={item.url} className="text-sm font-poppins text-white no-underline">{item.label}</a>
                     </li>
                 ))}
               </ul>

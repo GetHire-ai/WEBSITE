@@ -22,6 +22,8 @@ import Collage from './Pages/Collage';
 import Pricing from './Pages/Pricing';
 import './App.css'
 import CorporateWaitlist from "./Pages/CorporateWaitlist";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import TermsOfService from "./Pages/TermsOfService";
 
 
 function App() {
@@ -34,6 +36,8 @@ function App() {
 
     <Route path="/" element={<Corporate/>}/>
     <Route path="/join-waitlist" element={<CorporateWaitlist/>}/>
+    <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
+    <Route path="/terms-of-service" element={<TermsOfService/>}/>
 
     <Route path="/_home" element={<Home/>}/>
     <Route path="/mock-interview" element={<MockInterview/>}/>

@@ -1,4 +1,5 @@
 import React, {useEffect} from "react";
+import {Link} from "react-router-dom";
 
 
 function CorporateHeroSection() {
@@ -49,11 +50,19 @@ function CorporateHeroSection() {
 
                 {/* Calendly Form */}
                 <div className="flex justify-center items-center gap-4">
-                    <button className="bg-[#316EDC] hover:bg-[#295EC9] rounded-full text-white font-light text-xl px-4 py-2 transition-colors duration-300 ease-in-out"
-                            onClick={openCalendlyPopup}>
-                        Book a Demo
-                    </button>
+                    {/*<button className="bg-[#316EDC] hover:bg-[#295EC9] rounded-full text-white font-light text-xl px-4 py-2 transition-colors duration-300 ease-in-out"*/}
+                    {/*        onClick={openCalendlyPopup}>*/}
+                    {/*    Book a Demo*/}
+                    {/*</button>*/}
+
+                    <Link to="/join-waitlist" className="no-underline">
+                        <button className="bg-[#FFA500] hover:bg-[#FF8C00] rounded-full text-white text-xl font-normal px-4 py-2 transition-colors duration-300">
+                            Join Waitlist
+                        </button>
+                    </Link>
                 </div>
+
+
             </div>
         </div>
     )
